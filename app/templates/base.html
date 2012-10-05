@@ -1,0 +1,18 @@
+{% extends 'base_header_footer.html' %}
+
+
+
+{% block body %} 
+
+	<div class="wrapper">
+    {% block header %}
+        <header class="page-header">
+            <h1><span class="tumblr">omglol.</span>&nbsp;<span class="divider">&nbsp;</span><span class="times">GIFS</span></h1>
+        </header> 
+    {% endblock %}
+    {% block content %}
+            {% include 'photo_feed.html' %} 
+    {% endblock %}
+	</div>
+
+{% endblock %}

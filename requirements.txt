@@ -1,0 +1,11 @@
+Django==1.4.0
+MySQL-python==1.2.3
+South==0.7.4
+amqplib==1.0.2
+django-celery==2.5.1
+django-supervisor==0.2.7
+requests==0.10.8
+django-batch-select==0.2.3
+django-endless-pagination==1.1
+django-jsonfield==0.7.1
+pytz==2012b

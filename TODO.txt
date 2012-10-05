@@ -1,0 +1,5 @@
+TODO
+
+- Make a sick ass front end
+- Set up fabric, and a server lol
+- Make a management command to get posts from before the post with the earliest timestamp 

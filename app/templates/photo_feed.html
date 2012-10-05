@@ -1,0 +1,22 @@
+{% load endless %}
+
+{% lazy_paginate 10 photos %}
+<ul id="article-list">
+
+{% for photo in photos %}
+<li>
+    <article>
+        <p><strong>Tagged:</strong>{% for tag in photo.tags.all %} <span class="label label-info">{{ tag.name }}</span>{% endfor %}</p>
+        <div class="article-image-container">
+            <div class="article-image">
+                <a href="{{ photo.url }}">
+                    <img src="{{ photo.url }}" height="" width="350" alt="{{ photo.post_url }}" />
+                </a>
+            </div>
+        </div>
+    </article>
+</li>
+{% endfor %}
+
+</ul>
+{% show_more "View more photos" %}
